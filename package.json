@@ -1,0 +1,27 @@
+{
+  "name": "service-recruitment",
+  "version": "1.0.0",
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ./app/server.js",
+    "dev": "NODE_ENV=develop node ./app/server.js",
+    "uat": "NODE_ENV=uat node ./app/server.js",
+    "prod": "NODE_ENV=production node ./app/server.js",
+    "prod-windows": "SET \"NODE_ENV=production\" && node ./app/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.3",
+    "hbs": "^4.2.0",
+    "helmet": "^6.0.1",
+    "path": "^0.12.7"
+  }
+}

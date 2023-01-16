@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "exec_mode": "fork",
+      "instances": 1,
+      "script": "./app/server.js",
+      "name": "payment-encrypt-app",
+      "interpreter": "node@16.13.0",
+      "env": {
+        "NODE_ENV": "develop"
+      },
+      "env_uat": {
+        "NODE_ENV": "uat"
+      },
+      "env_prod": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
